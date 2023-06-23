@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+    <meta charset = "UTF-8">
+    <title>Breakout</title>
+    
+    <link rel = "stylesheet" type = "text/css" href = "styles/game.css">
+</head>
+<body onload = "MyGame.game.initialize();">
+    <div id = "game">
+        <div id = "main-menu" class = "screen">
+            <h1>Breakout!</h1>
+            <ul class = "menu">
+                <li><button id = "id-new-game">New&nbsp;Game</button></li>
+                <li><button id = "id-high-scores">High&nbsp;Scores</button></li>
+                <li><button id = "id-about">About</button></li>
+            </ul>
+        </div>
+        <div id = "game-play" class = "screen">
+            <canvas id = "id-canvas" width = "1000" height = "1000"></canvas>
+        </div>
+        <div id = "high-scores" class = "screen">
+            <h1>High Scores</h1>
+            <ol id="high-scores-list">
+            </ol>
+            <ul class = "menu">
+                <li><button id="reset-high-scores">Reset Scores</button></li>
+                <li><button id = "id-high-scores-back">Back</button></li>
+            </ul>
+        </div>
+        <div id = "about" class = "screen">
+            <h1>About</h1>
+            <h3>Developed by</h3>
+            <p>Kyle McMullin</p>
+            <h3>Music:</h3>
+            <p>"Timeless Love Songs" by Relaxing_Ambiance on pixabay</p>
+            <ul class = "menu">
+                <li><button id = "id-about-back">Back</button></li>
+            </ul>
+        </div>
+        <div id="pause-menu" class="screen">
+            <h1>Paused</h1>
+            <ul class = "menu">
+                <li><button id="pause-resume">Resume</button></li>
+                <li><button id="pause-main-menu">Main Menu</button></li>
+            </ul>
+    </div>
+
+    <script src="scripts/MyGame.js"></script>
+    <script src = "scripts/input-keyboard.js"></script>
+    <script src = "scripts/utils/random.js"></script>
+    <script src="scripts/render/Core.js"></script>
+    <script src= "scripts/render/ParticleSystem.js"></script>
+    <script src= "scripts/systems/ParticleSystem.js"></script>
+    <script src = "scripts/game.js"></script>
+    <script src = "scripts/Pause.js"></script>
+    <script src = "scripts/mainmenu.js"></script>
+    <script src = "scripts/gameplay.js"></script> 
+    <script src = "scripts/highscores.js"></script>
+    <script src = "scripts/about.js"></script>
+
+</body>
+</html>
